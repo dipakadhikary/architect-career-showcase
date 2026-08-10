@@ -198,8 +198,8 @@ Detail: [01-platform-overview/Architecture-Principles.md](01-platform-overview/A
 | --- | --- | --- |
 | 01 Platform Overview | Complete | [01-platform-overview/](01-platform-overview/) |
 | 02 System Design | **Complete** | [02-system-design/](02-system-design/) |
-| 03 Architecture Decision Records | Placeholder | [03-architecture-decision-records/](03-architecture-decision-records/) |
-| 04 Business Platform | Placeholder | [04-business-platform/](04-business-platform/) |
+| 03 Architecture Decision Records | **Complete** | [03-architecture-decision-records/](03-architecture-decision-records/) |
+| 04 Business Platform | **Complete** | [04-business-platform/](04-business-platform/) |
 | 05 Web Platform | Placeholder | [05-web-platform/](05-web-platform/) |
 | 06 AI Platform | Placeholder | [06-ai-platform/](06-ai-platform/) |
 | 07 AI Contracts | Placeholder | [07-ai-contracts/](07-ai-contracts/) |
@@ -221,16 +221,28 @@ Detail: [01-platform-overview/Architecture-Principles.md](01-platform-overview/A
 - [Technology-Stack.md](01-platform-overview/Technology-Stack.md)
 - [Architecture-Principles.md](01-platform-overview/Architecture-Principles.md)
 
+### Chapter 03 documents
+
+- [ADR Index](03-architecture-decision-records/README.md)
+- [Future Decisions](03-architecture-decision-records/Future-Decisions.md)
+- ADR-001 … ADR-030 (Overall Architecture through Code Generation)
+
+### Chapter 04 documents
+
+- [Business Platform Index](04-business-platform/README.md)
+- Overview, domains, modules, packages, layers, API, security, persistence, integration, exceptions, validation, configuration, observability, testing, performance, deployment, future enhancements
+
 ---
 
 ## Documentation Roadmap
 
 1. **Chapter 01** — orientation and ecosystem map *(complete)*.
 2. **Chapter 02** — enterprise system design, C4, runtime/data/security/AI architecture *(complete)*.
-3. **Chapter 03** — formal ADRs extracted from implemented decisions.
-4. **Chapters 04–07** — deep dives per repository (packages, APIs, ADRs in context).
-4. **Chapters 08–12** — DevOps, security, performance, testing, runbooks from real pipelines and configs.
-5. **Chapters 13–15** — interview narrative, lessons learned, consolidated roadmap.
+3. **Chapter 03** — formal ADRs extracted from implemented decisions *(complete)*.
+4. **Chapter 04** — Business Platform deep dive *(complete)*.
+5. **Chapters 05–07** — Web, AI Platform, AI Contracts deep dives.
+6. **Chapters 08–12** — DevOps, security, performance, testing, runbooks from real pipelines and configs.
+7. **Chapters 13–15** — interview narrative, lessons learned, consolidated roadmap.
 
 Older charter/vision drafts may still exist at the repository root for historical reference. **This portfolio structure is the canonical navigation going forward.**
 
