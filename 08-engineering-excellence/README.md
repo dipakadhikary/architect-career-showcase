@@ -60,13 +60,20 @@ Audience: Principal Architects, Enterprise Architects, Engineering Managers, Pla
 - [AI-Testing.md](Testing/AI-Testing.md)
 - [Performance-Testing.md](Testing/Performance-Testing.md)
 
-### Runbooks
-- [Local-Development.md](Runbooks/Local-Development.md)
-- [Local-Setup.md](Runbooks/Local-Setup.md)
-- [Deployment.md](Runbooks/Deployment.md)
-- [Troubleshooting.md](Runbooks/Troubleshooting.md)
-- [Incident-Response.md](Runbooks/Incident-Response.md)
-- [Disaster-Recovery.md](Runbooks/Disaster-Recovery.md)
+### Runbooks (Operations Handbook)
+
+Index: [Runbooks/README.md](Runbooks/README.md)
+
+| Section | Path |
+| --- | --- |
+| 01 Developer | [Runbooks/01-developer/](Runbooks/01-developer/) |
+| 02 Operations | [Runbooks/02-operations/](Runbooks/02-operations/) |
+| 03 Monitoring | [Runbooks/03-monitoring/](Runbooks/03-monitoring/) |
+| 04 Incident response | [Runbooks/04-incident-response/](Runbooks/04-incident-response/) |
+| 05 Maintenance | [Runbooks/05-maintenance/](Runbooks/05-maintenance/) |
+| 06 Checklists | [Runbooks/06-checklists/](Runbooks/06-checklists/) |
+
+Legacy flat filenames under `Runbooks/` redirect into this structure.
 
 ### Governance
 - [Coding-Standards.md](Governance/Coding-Standards.md)

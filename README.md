@@ -246,7 +246,7 @@ Detail: [01-platform-overview/Architecture-Principles.md](01-platform-overview/A
 ### Chapter 08 documents
 
 - [Engineering Excellence Index](08-engineering-excellence/README.md)
-- DevOps, Infrastructure, Security, Observability, Performance, Testing, Runbooks, Governance, Interview Guide, Lessons Learned, Roadmap, Demo
+- DevOps, Infrastructure, Security, Observability, Performance, Testing, **Operations Handbook (Runbooks)**, Governance, Interview Guide, Lessons Learned, Roadmap, Demo
 
 ### Chapter 10 documents
 
