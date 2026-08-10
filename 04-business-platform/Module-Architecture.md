@@ -83,7 +83,7 @@ Also owns `SecurityConfiguration`, `JwtAuthenticationFilter`, JSON auth entry/de
 | --- | --- |
 | Purpose | Evidence of skills and projects |
 | Public APIs | Projects, Skills, Technologies, Certifications, Achievements controllers |
-| Internal services | Matching `*ServiceImpl`; `PortfolioAiService` |
+| Internal services | Matching `*ServiceImpl`; `PortfolioAiService` (incl. stub `generateProjectSummary`) |
 | Repositories | Per entity repositories |
 | Events | `PortfolioUpdatedEvent` |
 | Tables | `portfolio_projects`, `portfolio_technologies`, `portfolio_project_technologies`, `portfolio_skills`, `portfolio_certifications`, `portfolio_achievements` |
@@ -98,12 +98,12 @@ Also owns `SecurityConfiguration`, `JwtAuthenticationFilter`, JSON auth entry/de
 | --- | --- |
 | Purpose | Job application lifecycle |
 | Public APIs | Companies, Recruiters, Applications, Interviews, Offers, CareerDashboard |
-| Internal services | CRUD services; `ApplicationStateMachine`; Specifications for search; `CareerAiService` |
+| Internal services | CRUD services; `CareerAuditService`; `ApplicationStateMachine`; Specifications for search; `CareerAiService` (incl. stub `recommendCareer`) |
 | Repositories | Company, Recruiter, JobApplication, Interview, Offer, history/audit as applicable |
 | Events | Submitted/status/rejected/interview/offer events via `CareerDomainEventPublisher` |
 | Tables | `career_*` tables including status history and audit logs |
-| Relationships | Application → Company/Recruiter; Application 1→N Interviews/Offers; archive flag on applications |
-| Dependency rules | Status changes must pass state machine; company delete blocked when referenced |
+| Relationships | Application → Company/Recruiter; Application 1→N Interviews/Offers; soft-archive on career aggregates |
+| Dependency rules | Status changes must pass state machine; company delete blocked when referenced by applications |
 
 ---
 

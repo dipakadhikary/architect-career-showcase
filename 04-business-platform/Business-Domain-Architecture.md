@@ -56,17 +56,17 @@ Track job search: companies, recruiters, applications, interviews, offers, statu
 | --- | --- |
 | `Company` | `career_companies` |
 | `Recruiter` | `career_recruiters` |
-| `JobApplication` | `career_job_applications` (includes `archived` soft-archive) |
+| `JobApplication` | `career_job_applications` |
 | `Interview` | `career_interviews` |
 | `Offer` | `career_offers` |
 | `ApplicationStatusHistory` | `career_application_status_history` |
 | `CareerAuditLog` | `career_audit_logs` |
 
-Status transitions are governed by `ApplicationStateMachine` / `ApplicationStateValidator` (DRAFT → … → OFFER; REJECTED/WITHDRAWN from non-terminal; ACCEPTED/DECLINED from OFFER; terminals have no outbound edges).
+Soft-archive (`archived` / `archived_at` + `archive()`) applies across these career aggregates (not applications alone). Status transitions are governed by `ApplicationStateMachine` / `ApplicationStateValidator`: DRAFT → APPLIED → SCREENING → TECHNICAL_INTERVIEW → MANAGER_INTERVIEW → HR_INTERVIEW → OFFER → (ACCEPTED | DECLINED); REJECTED / WITHDRAWN from non-terminal statuses; ACCEPTED, DECLINED, REJECTED, WITHDRAWN are terminal.
 
 ### Business services
 
-`CompanyService`, `RecruiterService`, `JobApplicationService`, `InterviewService`, `OfferService`, career dashboard service; `CareerAiService` for facade-backed AI (resume/cover letter/interview analysis) without public BFF controllers yet.
+`CompanyService`, `RecruiterService`, `JobApplicationService`, `InterviewService`, `OfferService`, `CareerDashboardService`, `CareerAuditService`; `CareerAiService` for facade-backed AI (resume / cover letter / interview analysis) without public BFF controllers yet. `CareerAiService.recommendCareer(...)` is an **extension stub** (`Optional.empty()`).
 
 ### REST APIs
 
@@ -178,7 +178,7 @@ Projects (with technologies), skills, certifications, achievements; project sear
 
 ### Business services
 
-Per-resource services; `PortfolioAiService` for review/skill-gap via facade.
+Per-resource services; `PortfolioAiService` for review/skill-gap via facade. `PortfolioAiService.generateProjectSummary(...)` is an **extension stub** (`Optional.empty()`).
 
 ### REST APIs
 
@@ -271,7 +271,7 @@ Separate deployables per domain; shared kernel libraries; CQRS read models for d
 
 ### Trade-offs
 
-Nested REST for learning/career children is explicit but verbose. Soft-archive is career-specific (`archived`), while knowledge uses hard delete — intentional per-domain choice, not a global soft-delete framework.
+Nested REST for learning/career children is explicit but verbose. Soft-archive covers the career aggregate set (`archived` / `archived_at`), while knowledge/learning/portfolio use hard delete — intentional per-domain choice, not a global soft-delete framework.
 
 ### Scaling considerations
 

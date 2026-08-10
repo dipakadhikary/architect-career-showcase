@@ -200,17 +200,12 @@ Detail: [01-platform-overview/Architecture-Principles.md](01-platform-overview/A
 | 02 System Design | **Complete** | [02-system-design/](02-system-design/) |
 | 03 Architecture Decision Records | **Complete** | [03-architecture-decision-records/](03-architecture-decision-records/) |
 | 04 Business Platform | **Complete** | [04-business-platform/](04-business-platform/) |
-| 05 Web Platform | Placeholder | [05-web-platform/](05-web-platform/) |
-| 06 AI Platform | Placeholder | [06-ai-platform/](06-ai-platform/) |
-| 07 AI Contracts | Placeholder | [07-ai-contracts/](07-ai-contracts/) |
-| 08 DevOps | Placeholder | [08-devops/](08-devops/) |
-| 09 Security | Placeholder | [09-security/](09-security/) |
-| 10 Performance | Placeholder | [10-performance/](10-performance/) |
-| 11 Testing | Placeholder | [11-testing/](11-testing/) |
-| 12 Runbooks | Placeholder | [12-runbooks/](12-runbooks/) |
-| 13 Interview Guide | Placeholder | [13-interview-guide/](13-interview-guide/) |
-| 14 Lessons Learned | Placeholder | [14-lessons-learned/](14-lessons-learned/) |
-| 15 Roadmap | Placeholder | [15-roadmap/](15-roadmap/) |
+| 05 Web Platform | **Complete** | [05-web-platform/](05-web-platform/) |
+| 06 AI Platform | **Complete** | [06-ai-platform/](06-ai-platform/) |
+| 07 AI Contracts | **Complete** | [07-ai-contracts/](07-ai-contracts/) |
+| 08 Engineering Excellence | **Complete** | [08-engineering-excellence/](08-engineering-excellence/) |
+
+> Former placeholders `08-devops` … `15-roadmap` are superseded by the consolidated Engineering Excellence Handbook (DevOps, Security, Performance, Testing, Runbooks, Interview, Lessons, Roadmap, Demo).
 
 ### Chapter 01 documents
 
@@ -232,6 +227,26 @@ Detail: [01-platform-overview/Architecture-Principles.md](01-platform-overview/A
 - [Business Platform Index](04-business-platform/README.md)
 - Overview, domains, modules, packages, layers, API, security, persistence, integration, exceptions, validation, configuration, observability, testing, performance, deployment, future enhancements
 
+### Chapter 05 documents
+
+- [Web Platform Index](05-web-platform/README.md)
+- Overview, application architecture, project structure, routing, state, API integration, authentication/authorization, components, design system, forms, errors, performance, accessibility, security, testing, build, future enhancements
+
+### Chapter 06 documents
+
+- [AI Platform Index](06-ai-platform/README.md)
+- Overview, layered architecture, capability registry, enterprise RAG, ingestion through evaluation, LangGraph/workflows/tools/memory, model router, guardrails, observability, security, testing, performance, deployment, future enhancements
+
+### Chapter 07 documents
+
+- [AI Contracts Index](07-ai-contracts/README.md)
+- Overview, contract-first architecture, OpenAPI, AsyncAPI, schema design, reusable components, code generation, artifact publishing, versioning, backward compatibility, consumer integration, Java SDK, Python models, TypeScript SDK, validation, CI/CD, governance, repository workflow, future enhancements
+
+### Chapter 08 documents
+
+- [Engineering Excellence Index](08-engineering-excellence/README.md)
+- DevOps, Infrastructure, Security, Observability, Performance, Testing, Runbooks, Governance, Interview Guide, Lessons Learned, Roadmap, Demo
+
 ---
 
 ## Documentation Roadmap
@@ -240,9 +255,10 @@ Detail: [01-platform-overview/Architecture-Principles.md](01-platform-overview/A
 2. **Chapter 02** — enterprise system design, C4, runtime/data/security/AI architecture *(complete)*.
 3. **Chapter 03** — formal ADRs extracted from implemented decisions *(complete)*.
 4. **Chapter 04** — Business Platform deep dive *(complete)*.
-5. **Chapters 05–07** — Web, AI Platform, AI Contracts deep dives.
-6. **Chapters 08–12** — DevOps, security, performance, testing, runbooks from real pipelines and configs.
-7. **Chapters 13–15** — interview narrative, lessons learned, consolidated roadmap.
+5. **Chapter 05** — Web Platform deep dive *(complete)*.
+6. **Chapter 06** — AI Platform deep dive *(complete)*.
+7. **Chapter 07** — AI Contracts deep dive *(complete)*.
+8. **Chapter 08** — Engineering Excellence Handbook *(complete)* — consolidates DevOps through roadmap/demo.
 
 Older charter/vision drafts may still exist at the repository root for historical reference. **This portfolio structure is the canonical navigation going forward.**
 

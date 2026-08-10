@@ -22,7 +22,7 @@ ai.platform.base-url: http://localhost:8090
 ai.platform.api-key: ""
 ```
 
-When disabled, facades short-circuit with safe fallbacks; product CRUD continues.
+When disabled, gateways use `AiPlatformMockResponses` (metrics status `MOCKED`) and facades still apply graceful fallbacks on failures; product CRUD continues. Feign client beans are conditional on `ai.platform.enabled=true`.
 
 ### REST communication (OpenFeign)
 

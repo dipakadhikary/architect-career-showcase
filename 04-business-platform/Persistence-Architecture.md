@@ -51,9 +51,10 @@ Career application search uses JPA **Specifications** under `career.specificatio
 ## Soft delete / archive
 
 - **Not** a global `@SQLDelete` soft-delete framework on `BaseEntity`
-- Career **job applications** (and related offer queries) use an **`archived`** flag / soft-archive semantics
-- Knowledge/learning/portfolio deletes are standard repository deletes (hard delete) as implemented in services
-- Document this honestly: “soft delete” is domain-specific, primarily career archiving
+- **Career domain** implements soft-archive via `archived` / `archived_at` and `archive()` on: `Company`, `Recruiter`, `JobApplication`, `Interview`, `Offer`, and `ApplicationStatusHistory` (Flyway V11–V12, including soft-delete-aware uniqueness/indexes)
+- Application list APIs expose active vs archived views; company/recruiter/interview/offer deletes archive rather than hard-delete
+- Knowledge/learning/portfolio deletes remain **hard deletes** as implemented in services
+- Soft-delete policy is therefore **career-scoped**, not platform-wide
 
 ## Transactions
 

@@ -22,7 +22,7 @@ No Spring Cache (`@Cacheable`) layer is implemented on domain reads today. Do no
 - UUID PKs with owner indexes
 - Search endpoints avoid unbounded scans via paging
 - Career Specifications compose predicates for selective filters
-- Soft-archive reduces noise on active application lists without physical deletes
+- Soft-archive reduces noise on active career lists without physical deletes across career aggregates
 
 ## Batch processing
 

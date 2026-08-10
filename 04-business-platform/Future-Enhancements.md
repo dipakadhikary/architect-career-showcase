@@ -25,7 +25,8 @@ Items below are **not implemented** (or only partially present) in `architect-ca
 
 | Item | Current state | Target |
 | --- | --- | --- |
-| Global soft-delete | Career `archived` only | Decide per-domain policy explicitly |
+| Soft-delete outside career | Career aggregates soft-archive (`archived` / `archived_at`); other domains hard-delete | Decide explicit per-domain policy if knowledge/learning/portfolio need archive |
+| Career/Portfolio AI stubs | `recommendCareer`, `generateProjectSummary` return empty | Implement via facades + BFF when product-ready |
 | Business read cache | None | Cache-aside for hot aggregates if measured |
 | DB prod sizing profiles | Local Hikari defaults | Env-specific pools + replicas |
 
