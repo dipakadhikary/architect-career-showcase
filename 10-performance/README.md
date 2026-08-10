@@ -1,5 +1,6 @@
-# Moved
+# Note
 
-This placeholder chapter is superseded by the consolidated **Engineering Excellence Handbook**:
+This folder is a legacy placeholder redirect from the old chapter numbering.
 
-→ [../08-engineering-excellence/README.md](../08-engineering-excellence/README.md)
+- **Engineering Excellence (ops/security/testing/runbooks):** [../08-engineering-excellence/README.md](../08-engineering-excellence/README.md)
+- **Engineering Knowledge Base (concepts & technologies):** [../10-engineering-knowledge/README.md](../10-engineering-knowledge/README.md)

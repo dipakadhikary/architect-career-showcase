@@ -204,8 +204,9 @@ Detail: [01-platform-overview/Architecture-Principles.md](01-platform-overview/A
 | 06 AI Platform | **Complete** | [06-ai-platform/](06-ai-platform/) |
 | 07 AI Contracts | **Complete** | [07-ai-contracts/](07-ai-contracts/) |
 | 08 Engineering Excellence | **Complete** | [08-engineering-excellence/](08-engineering-excellence/) |
+| 10 Engineering Knowledge | **Complete** | [10-engineering-knowledge/](10-engineering-knowledge/) |
 
-> Former placeholders `08-devops` … `15-roadmap` are superseded by the consolidated Engineering Excellence Handbook (DevOps, Security, Performance, Testing, Runbooks, Interview, Lessons, Roadmap, Demo).
+> Former placeholders `08-devops` … `15-roadmap` are superseded by the consolidated Engineering Excellence Handbook (DevOps, Security, Performance, Testing, Runbooks, Interview, Lessons, Roadmap, Demo). Chapter **10** is the Engineering Knowledge Base (concepts & technologies)—not a second architecture handbook.
 
 ### Chapter 01 documents
 
@@ -247,6 +248,11 @@ Detail: [01-platform-overview/Architecture-Principles.md](01-platform-overview/A
 - [Engineering Excellence Index](08-engineering-excellence/README.md)
 - DevOps, Infrastructure, Security, Observability, Performance, Testing, Runbooks, Governance, Interview Guide, Lessons Learned, Roadmap, Demo
 
+### Chapter 10 documents
+
+- [Engineering Knowledge Base Index](10-engineering-knowledge/README.md)
+- Architecture, Backend, Frontend, AI, Distributed Systems, Security, Database, Observability, Cloud, DevOps, and Patterns concept guides (ACOS-grounded)
+
 ---
 
 ## Documentation Roadmap
@@ -259,6 +265,7 @@ Detail: [01-platform-overview/Architecture-Principles.md](01-platform-overview/A
 6. **Chapter 06** — AI Platform deep dive *(complete)*.
 7. **Chapter 07** — AI Contracts deep dive *(complete)*.
 8. **Chapter 08** — Engineering Excellence Handbook *(complete)* — consolidates DevOps through roadmap/demo.
+9. **Chapter 10** — Engineering Knowledge Base *(complete)* — technologies, concepts, and patterns behind ACOS.
 
 Older charter/vision drafts may still exist at the repository root for historical reference. **This portfolio structure is the canonical navigation going forward.**
 
