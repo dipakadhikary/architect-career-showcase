@@ -13,8 +13,9 @@ Integrity rule: only behavior present in Java sources, Flyway migrations, Spring
 | Document | Focus |
 | --- | --- |
 | [Business-Platform-Overview.md](Business-Platform-Overview.md) | Purpose, stack, bounded contexts, ecosystem role |
-| [Business-Domain-Architecture.md](Business-Domain-Architecture.md) | Auth, Career, Knowledge, Learning, Portfolio, Dashboard, shared |
+| [Business-Domain-Architecture.md](Business-Domain-Architecture.md) | Auth, Career, Knowledge, Tutorials, Learning, Portfolio, Dashboard, shared |
 | [Module-Architecture.md](Module-Architecture.md) | Per-module APIs, services, repos, events, tables |
+| [Tutorials-Architecture.md](Tutorials-Architecture.md) | Hierarchical tutorials, FTS search, URLs, content types |
 | [Package-Structure.md](Package-Structure.md) | Package-by-feature conventions |
 | [Layered-Architecture.md](Layered-Architecture.md) | Presentation → application → domain → persistence → infrastructure |
 | [API-Architecture.md](API-Architecture.md) | REST standards, envelopes, pagination, OpenAPI |
@@ -44,7 +45,7 @@ flowchart LR
   Contracts[AI Contracts] -.->|path/DTO alignment| BP
 ```
 
-**Implemented product surface:** Auth, Knowledge notes, Learning plans/milestones/topics, Portfolio projects/skills/technologies/certifications/achievements, Career companies/recruiters/applications/interviews/offers/status machine, Dashboard (configured placeholders), AI health + Feign facades/gateways (feature-flagged).
+**Implemented product surface:** Auth, Knowledge notes, Tutorials (hierarchy + Concept/Q&A + PostgreSQL FTS), Learning plans/milestones/topics, Portfolio projects/skills/technologies/certifications/achievements, Career companies/recruiters/applications/interviews/offers/status machine, Dashboard (configured placeholders), AI health + Feign facades/gateways (feature-flagged).
 
 **Explicit stubs / gaps:** `analytics` package-info only; Dashboard metrics not DB-backed; AI BFF controllers beyond health largely missing; no Business Platform application container image in Compose (Postgres/pgAdmin only).
 

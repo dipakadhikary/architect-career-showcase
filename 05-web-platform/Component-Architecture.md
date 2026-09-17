@@ -4,8 +4,8 @@
 
 | Category | Examples |
 | --- | --- |
-| **Page components** | `LoginPage`, `KnowledgeListPage`, `ApplicationsListPage`, AI pages |
-| **Feature components** | Form dialogs, dashboards, tables composition, AI cards/chat |
+| **Page components** | `LoginPage`, `KnowledgeListPage`, `TutorialsHomePage`, `ApplicationsListPage`, AI pages |
+| **Feature components** | Form dialogs, dashboards, tables composition, AI cards/chat, tutorial tree/Q&A/search |
 | **Shared components** | DataTable, FormDialog, MarkdownViewer, ErrorBoundary |
 | **Layout components** | AppLayout, AuthLayout, Sidebar, AiShell, CareerShell |
 

@@ -30,6 +30,7 @@
 | V7 | Portfolio tables |
 | V8–V9, V11–V12 | Career tables / enhancements / hardening |
 | V10 | *(not present in tree — numbering jumps)* |
+| V13 | Tutorial topics / concepts / questions + PostgreSQL FTS (expression GIN indexes) |
 
 Tables include owner FKs to `users`, unique constraints per owner where needed, and indexes on `owner_id` and common lookup columns.
 

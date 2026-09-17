@@ -123,6 +123,40 @@ Owner scoping; validators/limits from `acos.knowledge.*`; `AfterCommitEventPubli
 
 ---
 
+## Tutorials
+
+### Responsibilities
+
+User-owned hierarchical learning topics with optional Markdown **Concept** content and Markdown **Questions & Answers**; PostgreSQL full-text search across concept/question/answer bodies; stable slug paths for deep linking.
+
+### Primary entities
+
+| Entity | Table |
+| --- | --- |
+| `TutorialTopic` | `tutorial_topics` |
+| `TutorialConcept` | `tutorial_concepts` |
+| `TutorialQuestion` | `tutorial_questions` |
+
+Hierarchy uses self-referencing `parent_id` with materialized `path`. No seed data.
+
+### Business services
+
+`TutorialService` / `TutorialServiceImpl`; native FTS via `TutorialSearchRepository`.
+
+### REST APIs (`/api/v1/tutorials`)
+
+Tree, topic CRUD, concept upsert, Q&A CRUD, path lookups, `GET /search?q=`.
+
+### Dependencies
+
+Owner scoping (same JWT auth as Knowledge); Flyway V13; existing Markdown sanitization on the web client.
+
+### Future AI integration
+
+None yet. Search is PostgreSQL FTS only (not Elasticsearch / AI RAG).
+
+---
+
 ## Learning
 
 ### Responsibilities

@@ -62,6 +62,21 @@ Also owns `SecurityConfiguration`, `JwtAuthenticationFilter`, JSON auth entry/de
 
 ---
 
+## `tutorial`
+
+| Aspect | Detail |
+| --- | --- |
+| Purpose | Hierarchical tutorials (Concept + Q&A) with PostgreSQL FTS |
+| Public APIs | `TutorialController` `/api/v1/tutorials` |
+| Internal services | `TutorialServiceImpl`, `TutorialSlugger` |
+| Repositories | Topic/concept/question + native `TutorialSearchRepository` |
+| Events | None |
+| Tables | `tutorial_topics`, `tutorial_concepts`, `tutorial_questions` |
+| Relationships | Topic self-parent; Concept 1:1 topic; Question N:1 topic; owner-scoped |
+| Dependency rules | Same auth as Knowledge; no separate content/auth stack |
+
+---
+
 ## `learning`
 
 | Aspect | Detail |

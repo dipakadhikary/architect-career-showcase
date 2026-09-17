@@ -8,6 +8,7 @@ The Business Platform organizes code **by feature/domain first**, then by techni
 com.acos
 ├── auth/{controller,service,repository,entity,dto,mapper,security,token,validator,...}
 ├── knowledge/{controller,service,repository,entity,dto,mapper,event,ai,validator,...}
+├── tutorial/{controller,service,repository,entity,dto,exception,util}
 ├── learning/...
 ├── portfolio/...
 ├── career/{...,specification,state,ai,event}

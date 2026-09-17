@@ -35,6 +35,12 @@ Each maps to an HTTP status in the enum.
 
 Unauthenticated/unauthorized HTML defaults are replaced by JSON handlers in the security filter chain so SPA clients receive envelopes consistently.
 
+## Feature exceptions (examples)
+
+- Knowledge: note not found / validation
+- Tutorials: `TutorialTopicNotFoundException`, `TutorialQuestionNotFoundException`, `TutorialCircularHierarchyException`, `TutorialDuplicatePathException`
+- Career: state-machine / resource not found variants
+
 ## Logging policy
 
 Business exceptions logged at WARN with code; unexpected errors at ERROR. Correlation id appears in the logging pattern via MDC.

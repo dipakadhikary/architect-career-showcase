@@ -45,6 +45,7 @@ Only the Business Platform writes product entities. AI Platform does not own car
 | --- | --- |
 | Auth | users, roles, refresh_tokens (hashed) |
 | Knowledge | notes (+ categories/tags via model) |
+| Tutorials | hierarchical topics, concept markdown, Q&A + FTS vectors |
 | Learning | plans, milestones, topics |
 | Portfolio | projects, technologies, skills, certifications, achievements |
 | Career | companies, recruiters, applications, interviews, offers, status history |
